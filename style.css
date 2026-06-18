@@ -97,9 +97,33 @@ body {
     justify-content: center;
     align-items: center;
 }
+.number-step-one {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		background-color: rgb(177, 221, 253);
+		color: black;
+}
 .steps-and-description {
     display: flex;
     gap: 1rem;
+}
+.step-count-and-name {
+    color: white;
+}
+.step-count-and-name p {
+    font-weight: 300;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+}
+.step-count-and-name h4 {
+    font-weight: 500;
+    font-size: 1rem;
 }
 .steps-and-description-wrapper {
     display: flex;
@@ -111,14 +135,15 @@ body {
     flex-direction: column;
     height: 100%;
 		margin-top: 1rem;
-		gap: 0.5rem;
 }
 
 form > input {
-	height: 2rem;
+	height: 2.5rem;
 	outline: none;
 	border: 1px solid rgb(222, 221, 225);
 	border-radius: 0.4rem;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
 }
 form > label {
 	display: flex;
@@ -137,4 +162,16 @@ button.next-step-btn {
 	background-color: rgb(10, 36, 81);
 	color: white;
 	cursor: pointer;
+}
+.steps-and-description-wrapper .step-count-and-name {
+	text-transform: uppercase;
+}
+.steps-and-description-wrapper .step-count-and-name > p {
+	font-family: "Inter", sans-serif;
+}
+.steps-and-description-wrapper .number-step {
+	color: white;
+}
+.steps-and-description-wrapper .steps-and-description {
+	color: white;
 }
