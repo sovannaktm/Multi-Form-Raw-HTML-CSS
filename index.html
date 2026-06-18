@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main-wrapper">
+		<div class="wrapper">
+				<div class="left-side-section">
+					 <div class="circle-orange"></div>
+					 <div class="circle-pink"></div>
+					 <div class="steps-and-description-wrapper">
+		
+							 <div class="steps-and-description">
+									 <div class="number-step">
+											 1
+									 </div>
+									 <div class="step-count-and-name">
+											 <p>Steps 1</p>
+											 <h4>Your Info</h4>
+									 </div>
+							 </div>
+							 <div class="steps-and-description">
+									 <div class="number-step">
+											 2
+									 </div>
+									 <div class="step-count-and-name">
+											 <p>Steps 2</p>
+											 <h4>Select Plan</h4>
+									 </div>
+							 </div>
+							 <div class="steps-and-description">
+									 <div class="number-step">
+											 3
+									 </div>
+									 <div class="step-count-and-name">
+											 <p>Steps 3</p>
+											 <h4>Add-Ons</h4>
+									 </div>
+							 </div>
+							 <div class="steps-and-description">
+									 <div class="number-step">
+											 4
+									 </div>
+									 <div class="step-count-and-name">
+											 <p>Steps 4</p>
+											 <h4>Summary</h4>
+									 </div>
+							 </div>
+					 </div>
+		
+				</div>
+				<div class="right-side-section">
+						<div class="info-wrapper">
+								<div class="info-description">
+										<h1>Personal Info</h1>
+										<p>Please provide your name, email adress, and phone number</p>
+								</div>
+								<div class="input-form">
+										<form action="/submit">
+												<label for="name">Name</label>
+												<input type="text" id="name" name="name">
+		
+												<label for="email">Email Address</label>
+												<input type="email" id="email" name="email">
+		
+												<label for="phone">Phone Number</label>
+												<input
+														type="tel"
+														id="phone"
+														name="phone"
+														pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+												>
+                        <div>
+                          <button class="next-step-btn">Next Step</button>
+                        </div>
+										</form>
+								</div>
+		
+						</div>
+				</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
