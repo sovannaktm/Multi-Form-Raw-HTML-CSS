@@ -175,3 +175,97 @@ button.next-step-btn {
 .steps-and-description-wrapper .steps-and-description {
 	color: white;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        align-items: flex-start;
+    }
+
+    .main-wrapper {
+        width: 100%;
+        max-width: 40rem;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-side-section {
+        width: 100%;
+        height: auto;
+        min-height: 10rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .right-side-section {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .steps-and-description-wrapper {
+        gap: 1rem;
+    }
+
+    .step-count-and-name h4 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile responsive design */
+/* Mobile */
+@media (max-width: 480px) {
+
+    body {
+        padding: 0;
+        background-color: white;
+    }
+
+    .main-wrapper {
+        width: 100%;
+        border-radius: 0;
+        padding: 1rem;
+    }
+
+    .left-side-section {
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+    }
+
+    .steps-and-description {
+        gap: 0.75rem;
+    }
+
+    .step-count-and-name p {
+        font-size: 0.75rem;
+    }
+
+    .step-count-and-name h4 {
+        font-size: 0.85rem;
+    }
+
+    .info-description h1 {
+        font-size: 1.75rem;
+    }
+
+    .info-description p {
+        font-size: 0.95rem;
+    }
+
+    form > input {
+        width: 100%;
+    }
+
+    form > div {
+        justify-content: center;
+    }
+
+    .next-step-btn {
+        width: 100%;
+    }
+}
